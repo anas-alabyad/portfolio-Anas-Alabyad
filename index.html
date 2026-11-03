@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Mohamed Alabyad | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#050505',
+                        cardBg: '#121212',
+                        accent: '#d4af37',
+                        accentHover: '#f3e5ab'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accent selection:text-darkBg">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-accent/20">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-accent">ANAS ALABYAD</a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-accent transition">Profile</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#ai-videos" class="hover:text-accent transition">AI Videos</a>
+                <a href="#engineering" class="hover:text-accent transition">Engineering</a>
+                <a href="#projects" class="hover:text-accent transition">Minesweepers</a>
+                <a href="#designs" class="hover:text-accent transition">Designs</a>
+                <a href="#certifications" class="hover:text-accent transition">Certifications</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold border border-accent/30 shadow-lg shadow-accent/5">
+                Software Development | Robotics Engineering | Digital Media
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
+                Anas Mohamed Hemeda Basiony Alabyad 
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+                Grade 12 student at M.O.L.S.<br> 1st Place Winner of the 13th Minesweepers Robotics Competition (2026).
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#contact" class="bg-accent text-darkBg font-bold px-6 py-3 rounded-lg hover:bg-accentHover transition shadow-lg shadow-accent/20">
+                    Get in Touch
+                </a>
+                <a href="#ai-videos" class="border border-slate-800 hover:border-accent px-6 py-3 rounded-lg font-medium transition text-slate-300 hover:text-accent">
+                    View AI Videos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile / About Section -->
+    <section id="about" class="py-20 bg-[#0a0a0a] border-y border-accent/10">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8 text-center"><span class="text-accent">Profile</span> & Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="md:col-span-2 bg-cardBg p-8 rounded-2xl border border-accent/20 shadow-2xl leading-relaxed text-slate-300">
+                    <h3 class="text-xl font-bold mb-3 text-accent">Professional Summary</h3>
+                    <p class="text-slate-300">
+Grade 12 student with an interdisciplinary technical background spanning software and application development, robotics, mechanical work, and electrical wiring. Familiar with multiple programming languages and development technologies, as well as CAD, graphic design, and video-editing tools. Recognized with first place in the 13th edition of a Minesweepers robotics competition. Motivated to apply technical skills to practical projects and continue developing across engineering and technology fields.                    </p>
+                </div>
+                <div class="bg-cardBg p-8 rounded-2xl border border-accent/20 shadow-2xl text-slate-300 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-accent">Education</h3>
+                        <p class="font-semibold text-slate-100">M.O.L.S</p>
+                        <p class="text-slate-400 text-sm mt-1">Grade 12</p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-accent/10">
+                        <h4 class="text-sm font-bold text-accent uppercase tracking-wider mb-2">Languages</h4>
+                        <p class="text-sm text-slate-300"><strong>Arabic:</strong> Native</p>
+                        <p class="text-sm text-slate-300 mt-1"><strong>English:</strong> B2 (Upper-Intermediate)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Technical & Creative <span class="text-accent">Skills</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Certified Programming & Engineering -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent transition group">
+                    <div class="text-accent text-3xl mb-4 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="text-lg font-bold mb-2 text-slate-100">Programming & Engineering</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        C++, Python, Java, PHP, SQL, Dart, Flutter, OOP, Web/Mobile Dev, Robotics, SolidWorks, Electrical Wiring (Certified).
+                    </p>
+                </div>
+                <!-- Self Educated: HTML & ICDL -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent transition group">
+                    <div class="text-accent text-3xl mb-4 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3 class="text-lg font-bold mb-2 text-slate-100">Web & Computer (Self-Educated)</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        HTML, CSS, ICDL, and general computer applications acquired through self-directed learning.
+                    </p>
+                </div>
+                <!-- Self Educated: Video Editing & AI Tools -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent transition group">
+                    <div class="text-accent text-3xl mb-4 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-video"></i></div>
+                    <h3 class="text-lg font-bold mb-2 text-slate-100">Video Editing & AI (Self-Educated)</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Video editing, Montage, CapCut, and advanced AI video generation tools mastered independently.
+                    </p>
+                </div>
+                <!-- Design & Media -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent transition group">
+                    <div class="text-accent text-3xl mb-4 group-hover:scale-110 transition duration-300"><i class="fa-solid fa-palette"></i></div>
+                    <h3 class="text-lg font-bold mb-2 text-slate-100">Design & Digital Media</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Adobe applications, Canva, graphic design, and visual composition.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- AI Video Showcase Section -->
+    <section id="ai-videos" class="py-20 bg-[#0a0a0a] border-y border-accent/10 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-xs text-accent font-semibold tracking-wider uppercase bg-accent/30 px-3 py-1 rounded-full border border-accent/30">Artificial Intelligence & Media</span>
+                <h2 class="text-3xl font-bold mt-3">AI-Powered Video <span class="text-accent">Productions</span></h2>
+                <p class="text-slate-400 mt-2 max-w-2xl mx-auto">Showcasing AI-generated documentary and social awareness video projects combining visual effects and storytelling.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Video 1: Harassment Awareness Campaign -->
+                <div class="bg-cardBg p-5 rounded-2xl border border-accent/20 shadow-2xl overflow-hidden flex flex-col justify-between hover:border-accent/50 transition">
+                    <div>
+                        <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-black flex items-center justify-center mb-4 border border-accent/10">
+                            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/9zT3UsRDR4g" title="Harassment Awareness" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">Social Awareness Campaign</span>
+                        <h4 class="text-lg font-bold mt-1 text-slate-100">Harassment is a Crime</h4>
+                        <p class="text-slate-400 text-sm mt-2">An impactful AI-generated awareness video addressing child protection, safety, and psychological support.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2: October War Documentary -->
+                <div class="bg-cardBg p-5 rounded-2xl border border-accent/20 shadow-2xl overflow-hidden flex flex-col justify-between hover:border-accent/50 transition">
+                    <div>
+                        <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-black flex items-center justify-center mb-4 border border-accent/10">
+                            <iframe class="w-full h-full object-cover" src="https://www.youtube.com/embed/eR8eWbMnMO0" title="October War AI Documentary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">Historical Documentary</span>
+                        <h4 class="text-lg font-bold mt-1 text-slate-100">October War Military History</h4>
+                        <p class="text-slate-400 text-sm mt-2">An immersive visual exploration combining AI tools and sound design to narrate the milestones of the October War.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering & PCB Showcase Section -->
+    <section id="engineering" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-xs text-accent font-semibold tracking-wider uppercase bg-accent/30 px-3 py-1 rounded-full border border-accent/30">Technical Expertise</span>
+                <h2 class="text-3xl font-bold mt-3">Mechanical CAD, PCB Design & <span class="text-accent">Coding</span></h2>
+                <p class="text-slate-400 mt-2 max-w-2xl mx-auto">Showcasing structural mechanical models, custom PCB circuit board routing, and software programming workflows.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Item 1 -->
+                <div class="bg-cardBg rounded-xl border border-accent/20 overflow-hidden hover:border-accent transition group">
+                    <div class="h-48 overflow-hidden bg-slate-900 relative">
+                        <img src="mechanical_design_1.png.png" alt="Mechanical Design Chassis" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">CAD Modeling</span>
+                        <h4 class="text-base font-bold mt-1 text-slate-100">Mechanical Chassis Design</h4>
+                        <p class="text-slate-400 text-xs mt-2">Precise structural design and component placement using SolidWorks.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-cardBg rounded-xl border border-accent/20 overflow-hidden hover:border-accent transition group">
+                    <div class="h-48 overflow-hidden bg-slate-900 relative">
+                        <img src="mechanical_brackets.png.png" alt="Mechanical Brackets" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">Parts Engineering</span>
+                        <h4 class="text-base font-bold mt-1 text-slate-100">Custom Brackets & Mounts</h4>
+                        <p class="text-slate-400 text-xs mt-2">Engineered mechanical brackets with mounting holes for robust assemblies.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-cardBg rounded-xl border border-accent/20 overflow-hidden hover:border-accent transition group">
+                    <div class="h-48 overflow-hidden bg-slate-900 relative">
+                        <img src="pcb_design.png.png" alt="PCB Design Fritzing" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">Circuit Design</span>
+                        <h4 class="text-base font-bold mt-1 text-slate-100">PCB Layout & Routing</h4>
+                        <p class="text-slate-400 text-xs mt-2">Custom electronic circuit routing and electrical wiring connections.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-cardBg rounded-xl border border-accent/20 overflow-hidden hover:border-accent transition group">
+                    <div class="h-48 overflow-hidden bg-slate-900 relative">
+                        <img src="coding_workspace.png.png" alt="Coding Workspace VS Code" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">Software Dev</span>
+                        <h4 class="text-base font-bold mt-1 text-slate-100">Coding & Implementation</h4>
+                        <p class="text-slate-400 text-xs mt-2">Writing clean application logic and system architecture in VS Code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minesweepers Project Showcase Section -->
+    <section id="projects" class="py-20 bg-[#0a0a0a] border-y border-accent/10 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-xs text-accent font-semibold tracking-wider uppercase bg-accent/30 px-3 py-1 rounded-full border border-accent/30">Featured Achievement</span>
+                <h2 class="text-3xl font-bold mt-3">Minesweepers Robotics <span class="text-accent">Competition</span></h2>
+                <p class="text-slate-400 mt-2 max-w-2xl mx-auto">1st Place - 13th Minesweepers Robotics Competition (2026). Active participation in the Juniors Category hosted in Zewail City.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-cardBg rounded-xl border border-accent/20 overflow-hidden hover:border-accent transition group">
+                    <div class="h-56 overflow-hidden bg-slate-900 relative">
+                        <img src="minesweeper_robot.jpg.jpg" alt="Minesweeper Robot on Arena" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">Hardware & Assembly</span>
+                        <h4 class="text-lg font-bold mt-1 text-slate-100">Landmine Detection Robot</h4>
+                        <p class="text-slate-400 text-sm mt-2">Engineered with custom mechanical work, precise electrical wiring, and wireless control systems.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-cardBg rounded-xl border border-accent/20 overflow-hidden hover:border-accent transition group">
+                    <div class="h-56 overflow-hidden bg-slate-900 relative">
+                        <img src="minesweeper_competition.jpg.jpg" alt="Competition Arena Operation" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">Live Operations</span>
+                        <h4 class="text-lg font-bold mt-1 text-slate-100">Arena Navigation & Control</h4>
+                        <p class="text-slate-400 text-sm mt-2">Operating the robot live across grid-based minefields during the competition.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-cardBg rounded-xl border border-accent/20 overflow-hidden hover:border-accent transition group">
+                    <div class="h-56 overflow-hidden bg-slate-900 relative">
+                        <img src="minesweeper_win.jpg.jpg" alt="1st Place Winner Trophies" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">Victory & Recognition</span>
+                        <h4 class="text-lg font-bold mt-1 text-slate-100">1st Place Gold Winner</h4>
+                        <p class="text-slate-400 text-sm mt-2">Awarded first place in the 13th edition of the Minesweepers robotics competition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphic Design Showcase Section -->
+    <section id="designs" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-center">Featured <span class="text-accent">Designs</span></h2>
+            <p class="text-slate-400 text-center mb-12 max-w-xl mx-auto">A glimpse into graphic design and visual art projects using Canva and Adobe applications.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Design 1 -->
+                <div class="bg-cardBg rounded-xl border border-accent/20 overflow-hidden hover:border-accent transition group">
+                    <div class="h-48 overflow-hidden bg-slate-900 relative">
+                        <img src="Pizza Resturant.jpg" alt="Pizza Restaurant Design" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">Commercial Design</span>
+                        <h4 class="text-lg font-bold mt-1 text-slate-100">Hot & Spicy Pizza Restaurant</h4>
+                        <p class="text-slate-400 text-sm mt-2">Appetizing commercial layout focusing on vibrant promotional visuals and typography.</p>
+                    </div>
+                </div>
+
+                <!-- Design 2 -->
+                <div class="bg-cardBg rounded-xl border border-accent/20 overflow-hidden hover:border-accent transition group">
+                    <div class="h-48 overflow-hidden bg-slate-900 relative">
+                        <img src="Se7en 1.png" alt="Se7en Movie Artwork" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">Cinematic Art</span>
+                        <h4 class="text-lg font-bold mt-1 text-slate-100">Se7en Movie Tribute Poster</h4>
+                        <p class="text-slate-400 text-sm mt-2">Dark atmospheric digital composition reflecting cinematic storytelling and dramatic tension.</p>
+                    </div>
+                </div>
+
+                <!-- Design 3 -->
+                <div class="bg-cardBg rounded-xl border border-accent/20 overflow-hidden hover:border-accent transition group">
+                    <div class="h-48 overflow-hidden bg-slate-900 relative">
+                        <img src="GRAPHIC DESIGN By  Anas Alabyad.jpg" alt="Graphic Designer Identity" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-accent font-semibold tracking-wider uppercase">Personal Branding</span>
+                        <h4 class="text-lg font-bold mt-1 text-slate-100">Graphic Designer Profile Card</h4>
+                        <p class="text-slate-400 text-sm mt-2">Creative branding showcasing digital media and design workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Training Section (All official files included) -->
+    <section id="certifications" class="py-20 bg-[#0a0a0a] border-y border-accent/10 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-center">Accredited <span class="text-accent">Certifications</span></h2>
+            <p class="text-slate-400 text-center mb-12 max-w-xl mx-auto">Official certificates and credentials issued by Zewail City, TechnoX, CAPMAS, and HRDC.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cert 1 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">Zewail City</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">13th Minesweepers Participation Certificate</h4>
+                    <p class="text-slate-400 text-sm mt-2">Recognized for active participation in the Juniors Category at Zewail City of Science, Technology and Innovation.</p>
+                </div>
+                <!-- Cert 2 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">CAPMAS & HRDC / TechnoX</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">EXPOtec Level Two Certified Programmer</h4>
+                    <p class="text-slate-400 text-sm mt-2">Awarded for outstanding performance, successfully completing Level Two and the final competition.</p>
+                </div>
+                <!-- Cert 3 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">CAPMAS & HRDC / TechnoX</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">Junior EXPOtec Level One Certified Programmer</h4>
+                    <p class="text-slate-400 text-sm mt-2">Awarded for outstanding performance and completion of the Level One program.</p>
+                </div>
+                <!-- Cert 4 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">TechnoX Academy</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">Advanced Mechatronics Projects</h4>
+                    <p class="text-slate-400 text-sm mt-2">Hands-on experience with IMU, GPS, NRF modules, encoders, SPI, I2C, and UART (2025/2026).</p>
+                </div>
+                <!-- Cert 5 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">TechnoX Academy</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">Technical Projects Competition</h4>
+                    <p class="text-slate-400 text-sm mt-2">Practical assessment experience writing and successfully running code in complete working projects.</p>
+                </div>
+                <!-- Cert 6 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">TechnoX Academy</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">Front End Development Course</h4>
+                    <p class="text-slate-400 text-sm mt-2">HTML, CSS, and JavaScript skills to build responsive user interfaces, create interactive web elements, and develop engaging front-end systems.</p>
+                </div>
+                <!-- Cert 7 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">TechnoX Academy</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">Back End Development Course</h4>
+                    <p class="text-slate-400 text-sm mt-2">PHP and MySQL skills to develop server-side applications, manage databases, and build functional back-end systems.</p>
+                </div>
+                <!-- Cert 8 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">TechnoX Academy</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">Robotics & Control Course</h4>
+                    <p class="text-slate-400 text-sm mt-2">Hands-on experience building and controlling robots via IMU module and NRF wireless transmission.</p>
+                </div>
+                <!-- Cert 9 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">TechnoX Academy</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">C++ Fundamentals Course</h4>
+                    <p class="text-slate-400 text-sm mt-2">Successfully covered essential concepts of the C++ programming language.</p>
+                </div>
+                <!-- Cert 10 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">TechnoX Academy</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">Object-Oriented Programming (OOP)</h4>
+                    <p class="text-slate-400 text-sm mt-2">Covered essential OOP concepts and their application in building well-structured and reusable code.</p>
+                </div>
+                <!-- Cert 11 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">TechnoX Academy</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">Robotics Course (2024/2025)</h4>
+                    <p class="text-slate-400 text-sm mt-2">Covered the ability to build and control robotic systems using C++.</p>
+                </div>
+                <!-- Cert 12 -->
+                <div class="bg-cardBg p-6 rounded-xl border border-accent/20 hover:border-accent/50 transition">
+                    <span class="text-xs text-accent font-semibold tracking-wider uppercase">TechnoX Academy</span>
+                    <h4 class="text-lg font-bold mt-1 text-slate-100">Mobile App Development Course</h4>
+                    <p class="text-slate-400 text-sm mt-2">Dart and Flutter skills to develop cross-platform mobile applications, manage state, and build functional native-like mobile systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Let's <span class="text-accent">Connect</span></h2>
+            <p class="text-slate-400 mb-8">Feel free to reach out for opportunities, collaborations, or project discussions.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:anas.alabyad9@gmail.com" class="flex items-center gap-2 bg-cardBg px-6 py-3 rounded-xl border border-accent/20 hover:border-accent transition text-slate-300 hover:text-accent">
+                    <i class="fa-solid fa-envelope text-accent"></i> anas.alabyad9@gmail.com
+                </a>
+                <a href="tel:01066602681" class="flex items-center gap-2 bg-cardBg px-6 py-3 rounded-xl border border-accent/20 hover:border-accent transition text-slate-300 hover:text-accent">
+                    <i class="fa-solid fa-phone text-accent"></i> 010 666 02681
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-accent/20 text-center text-slate-500 text-sm bg-[#0a0a0a]">
+        <p>&copy; 2026 Anas Mohamed Alabyad. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
